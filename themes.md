@@ -15,13 +15,15 @@ Here are a few basic ones:
 
 * `%F{color}` - change the foreground (text) to `color`
 * `%K{color}` - change the background to `color`
-* `%D{dateformat}% - display date in `dateformat`, e.g. `%I:%M:%S %p` - 10:12:36 AM
-* `%B` - start bold | `%b% - stop bold
+* `%D{dateformat}` - display date in `dateformat`, e.g. `%I:%M:%S %p` - 10:12:36 AM
+* `%B` - start bold | `%b%` - stop bold
 * `%~` - current path | `%3~` - current path limited to 3 levels up
 * `%M` - hostname | `%m` - hostname up to the first '.'
 * `%n` - username
 
 So we're constructing a long string containing the colours and information that is then parsed and displayed on the screen.
+
+The [Powerline](https://github.com/powerline/powerline) is used for their [fonts](https://github.com/powerline/fonts) that give us characters like , , , ⚡, ⚙.
 
 ## Colors
 Colors are dependant on your terminal. The basic ones that will be supported everywhere are:
