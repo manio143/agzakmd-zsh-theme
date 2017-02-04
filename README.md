@@ -12,3 +12,6 @@ What it shows:
 
 ## Preview
 ![Preview](screenshot.png)
+
+## I want to edit the theme file
+I've written a short explanation how oh-my-zsh themes are built: [Themes](themes.md)
