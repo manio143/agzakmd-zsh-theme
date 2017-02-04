@@ -208,12 +208,12 @@ prompt_git() {
     if [[ $commits_ahead -gt 0 && $commits_behind -gt 0 ]]; then has_diverged=true; fi
     if [[ $has_diverged == false && $commits_ahead -gt 0 ]]; then
       if [[ $bgclr == 'red' || $bgclr == 'magenta' ]] then
-        to_push=" $fg_bold[white]↑$commits_ahead$fg_bold[$fgclr]"
+        to_push=" ↑$commits_ahead"
       else
-        to_push=" $fg_bold[black]↑$commits_ahead$fg_bold[$fgclr]"
+        to_push=" ↑$commits_ahead"
       fi
     fi
-    if [[ $has_diverged == false && $commits_behind -gt 0 ]]; then to_pull=" $fg_bold[magenta]↓$commits_behind$fg_bold[$fgclr]"; fi
+    if [[ $has_diverged == false && $commits_behind -gt 0 ]]; then to_pull=" ↓$commits_behind"; fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
       mode=" <B>"
