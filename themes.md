@@ -22,3 +22,17 @@ Here are a few basic ones:
 * `%n` - username
 
 So we're constructing a long string containing the colours and information that is then parsed and displayed on the screen.
+
+## Colors
+Colors are dependant on your terminal. The basic ones that will be supported everywhere are:
+
+- black - 0
+- red - 1
+- green - 2
+- yellow - 3
+- blue - 4
+- magenta - 5
+- cyan - 6
+- white - 7
+
+But many terminals may support up to 255 in the color index.
